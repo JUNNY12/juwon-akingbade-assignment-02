@@ -16,9 +16,8 @@ const assignment = {};
 function sumOfNumbers(arrayOfNumbers) {
 
     let sum;
-    sum = arrayOfNumbers.reduce((a, b) => {
-        return  a + b
-    })
+    
+    sum = arrayOfNumbers.reduce((a, b) => a + b, 0 )
 
     return sum
 }
