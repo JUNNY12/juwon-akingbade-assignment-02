@@ -59,8 +59,8 @@ function celsiusToFahrenheit(arrayOfNumbers) {
     
     let temperatureInFehr = []
 
-    for (i = 0; i < arrayOfNumbers.length; i++ ){
-        let conversion = temp[i] * (9 / 5) + 32;
+    for (i=0; i<arrayOfNumbers.length; i++ ){
+        let conversion = arrayOfNumbers[i] * (9 / 5) + 32;
         let convertToWholeNumber= Math.trunc(conversion)
         temperatureInFehr.push(convertToWholeNumber)
     }
